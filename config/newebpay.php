@@ -76,7 +76,7 @@ return [
      * 當交易取消時，平台會出現返回鈕，使消費者依以此參數網址返回商店指定的頁面
      * default: null
      */
-    'ClientBackURL' => env('CASH_CLIENT_BACK_URL') != null ? env('APP_URL') . env('CASH_CLIENT_BACK_URL') : null,
+    'ClientBackURLRL' => env('CASH_CLIENT_BACK_URL') != null ? env('APP_URL') . env('CASH_CLIENT_BACK_URL') : null,
 
 
     /*

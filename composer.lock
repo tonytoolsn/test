@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "196852ce5ff84db35478234ca23a9bba",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4614,6 +4614,46 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.3"
             },
             "time": "2020-07-13T06:12:54+00:00"
+        },
+        {
+            "name": "treerful/laravel-newebpay",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/pickone/laravel-newebpay.git",
+                "reference": "7f9272f3aa50efc1efc8ad0e1d34f62432c64d6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/pickone/laravel-newebpay/get/7f9272f3aa50efc1efc8ad0e1d34f62432c64d6c.zip",
+                "reference": "7f9272f3aa50efc1efc8ad0e1d34f62432c64d6c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Treerful\\NewebPay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "w4ll4se",
+                    "email": "wallase.huang@gmail.com"
+                }
+            ],
+            "description": "A library of connecting newebpay's API service.",
+            "homepage": "https://bitbucket.org/pickone/laravel-newebpay",
+            "support": {
+                "source": "https://bitbucket.org/pickone/laravel-newebpay/src/7f9272f3aa50efc1efc8ad0e1d34f62432c64d6c/?at=1.0.0"
+            },
+            "time": "2019-03-25T16:55:55+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

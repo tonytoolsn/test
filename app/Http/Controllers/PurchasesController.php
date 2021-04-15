@@ -35,7 +35,7 @@ public function purchases(Request $request){
   }
 
   public function orderSuccess(Request $request){
-    //Log::info('app.requests',['request' => $request->all()]); 藍星金流回傳的資料
+    Log::info('app.requests',['request' => $request->all()]); //藍星金流回傳的資料
     return view('purchases.index');
   }
 

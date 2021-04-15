@@ -23,6 +23,7 @@ Route::post('/purchases','PurchasesController@purchases');
 //當使用者付款成功時，導到的畫面，是用post，Controller重導get的success方法
 
 Route::post('purchases/successRedirect' ,'PurchasesController@successRedirect');
+
 Route::get('purchases/success','PurchasesController@success');
 
 //當使用者付款成功，藍星將資料導到的位址，是用post

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use NewebPay;
-
+use Carbon\Carbon;
 class PurchasesController extends Controller
 {
 
@@ -12,13 +12,15 @@ public function index(){
     return view('purchases.index');
 }
 
-public function purchases(){
+public function purchases(Request $request){
     $newebpay = new NewebPay();  //使用此物件要級的use
+    $deposit=$request->deposit;
+    $email=$request->email;
     return $newebpay->payment(
-    '123',                       // 訂單編號
-    10,                          // 交易金額
+    Carbon::now()->timestamp,                       // 訂單編號
+    $deposit,                    // 交易金額
     '測試訂單',                   // 交易描述
-    'tonytest@gmail.com'         // 付款人信箱
+    $email                       // 付款人信箱
     )->submit();
-}
+  }
 }

@@ -26,12 +26,12 @@ public function purchases(Request $request){
     )->submit();
   }
 
-  public function successRedirect(){
-    return redirect('purchases/success');
-  }
-
   public function success(){
     return view('purchases.success');
+  }
+
+  public function successRedirect(){
+    return redirect('/purchases/success');
   }
 
   public function orderSuccess(Request $request){
